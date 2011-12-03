@@ -1,7 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html>
 	<head>
 		<title>Sample usage</title>
+		<script src="https://raw.github.com/VincentCohen/JSReadify/master/bookmarklet.js"></script>
 	</head>
+	
+	
 	<body>
 	
 		<h1>JSReadify doc.</h1>
@@ -10,10 +13,16 @@
 			Build this to test and enchance my front-end skills.
 		</p>
 		
+		<a href="javascript: (function () {  
+    var jsCode = document.createElement('script');  
+    jsCode.setAttribute('src', 'https://raw.github.com/VincentCohen/JSReadify/master/bookmarklet.js');  
+  document.body.appendChild(jsCode);  
+ }());">Click this code ;)</a>
+		
 		<h2>Documentation</h2>		
 		<p>
 			None available.
-			Just bookmark this <a href="https://raw.github.com/VincentCohen/JSReadify/master/bookmarklet.js" title="JSReadify">Javascript Code</a> and use it whenever you come across a page you'd  like to read with a better experience.
+
 		</p>
 	</body>
 </html>
