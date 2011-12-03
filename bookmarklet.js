@@ -17,7 +17,7 @@ function Readify() {
     	'clear':'both',
     	'display':'block',
     	'background':'#E0D3BC',
-    	'color':'#E3C694';
+    	'color':'#E3C694'
     });
     //remove html
     //insert new css
