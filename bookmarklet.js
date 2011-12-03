@@ -6,5 +6,5 @@
 */
 javascript:(function(){
 	var scriptTag = document.createElement('script');
-	scriptTag.setAttribute('src','http://vincentcohen.nl/');
+	scriptTag.setAttribute('src','https://raw.github.com/VincentCohen/JSReadify/master/readify.js');
 });
