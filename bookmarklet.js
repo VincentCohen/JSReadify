@@ -10,6 +10,13 @@ else {
   
 function Readify() {  
     alert('lets make this page beautifull!');
-    
+    //remove unnecessary elements
     jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
+    
+    $('*')
+    .filter(function() {
+        return $.trim($(this).text()) === ''
+    })
+    .remove()
+
 }  
