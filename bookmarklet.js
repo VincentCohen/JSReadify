@@ -13,10 +13,13 @@ function Readify() {
     //remove unnecessary elements
     jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
     
-    $('*')
+    $('body *')
     .filter(function() {
         return $.trim($(this).text()) === ''
     })
     .remove()
-
+	.css({
+		'font-size':'1.3em',
+		'line-height':'0.5em'
+	});
 }  
