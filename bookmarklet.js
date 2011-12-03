@@ -12,13 +12,9 @@ function Readify() {
     alert('lets make this page beautifull!');
     
     jQuery('img').remove();
-    jQuery('*').css({
-    	'float':'none',
-    	'clear':'both',
-    	'display':'block',
-    	'background':'#E0D3BC',
-    	'color':'#E3C694'
-    });
+    jQuery('link').remove();
+    jQuery('style').remove();
+    
     //remove html
     //insert new css
 }  
