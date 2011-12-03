@@ -11,10 +11,5 @@ else {
 function Readify() {  
     alert('lets make this page beautifull!');
     
-    jQuery('img').remove();
-    jQuery('link').remove();
-    jQuery('style').remove();
-    
-    //remove html
-    //insert new css
+    jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
 }  
