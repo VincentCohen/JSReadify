@@ -13,7 +13,7 @@ function Readify() {
     //remove unnecessary elements
     jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
     
-    $('body *')
+    /*$('body *')
     .filter(function() {
         return $.trim($(this).text()) === ''
     })
@@ -21,5 +21,16 @@ function Readify() {
 	.css({
 		'font-size':'1.3em',
 		'line-height':'0.5em'
+	});*/
+	var t=0;
+	var t_elem;
+	$("*",elem).each(function () {
+	    $this = $(this);
+	    if ( $this.outerHeight() > t ) {
+	        t_elem=this;
+	        t=$this.outerHeight();
+	    }
 	});
+	
+	jQuery(t_elem).css('border','1px solid red');
 }  
