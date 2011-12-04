@@ -22,13 +22,13 @@ function Readify() {
 		'font-size':'1.3em',
 		'line-height':'0.5em'
 	});*/
-	var t=0;
-	var t_elem;
+	var containerHeight		  =	0;
+	var container =;
 	$("body *").each(function () {
-	    $this = $(this);
-	    if ( $this.outerHeight() > t ) {
-	        t_elem=this;
-	        t=$this.outerHeight();
+	    $current = $(this);
+	    if ( $current.outerHeight() > containerHeight ) {
+	        container		=	this;
+	        containerHeight	=	$current.outerHeight();
 	    }
 	});
 	
