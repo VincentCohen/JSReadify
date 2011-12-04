@@ -44,8 +44,13 @@ function Readify() {
 	 	+ $newContainer + ' #header,' 
 	 	+ $newContainer + 'footer,' 
 	 	+ $newContainer + ' #footer').remove();
-	 	
-	$newContainer.replace("<(\w+)\b(?:\s+[\w\-.:]+(?:\s*=\s*(?:""[^""]*""|'[^']*'|[\w\-.:]+))?)*\s*/?>\s*</\1\s*>","");
+	
+	function replaceEmptyHTML(html){
+	
+		console.log(html.replace("/<[^\/>][^>]*><\/[^>]+>/",""));
+//		replaceEmptyHTML(html)
+	} 	
+	replaceEmptyHTML($newContainer);
 		 
 	console.log($newContainer);
 	// $('html').remove('body');
