@@ -11,7 +11,7 @@ else {
 function Readify() {  
     alert('lets make this page beautifull!');
     //remove unnecessary elements
-    jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
+    //jQuery('img,link,style,a,form,header,#header,footer,#footer').remove();
     
     /*$('body *')
     .filter(function() {
@@ -22,6 +22,7 @@ function Readify() {
 		'font-size':'1.3em',
 		'line-height':'0.5em'
 	});*/
+	
 	var highest	=0;
 	var mainContainer;
 	$("body *").each(function () {
@@ -32,6 +33,17 @@ function Readify() {
 	    }
 	});
 	
-	var newContainer = $(mainContainer).html();
-	console.log(newContainer);
+	var $newContainer = $(mainContainer).html();
+	
+	 $($newContainer + 'img, ' 
+	 	+ $newContainer + ' script, '
+	 	+ $newContainer + ' style,' 
+	 	+ $newContainer + ' a,' 
+	 	+ $newContainer + ' form,'
+	 	+ $newContainer + ' header,'
+	 	+ $newContainer + ' #header,' 
+	 	+ $newContainer + 'footer,' 
+	 	+ $newContainer + ' #footer').remove();
+	 	
+	 console.log($newContainer);
 }  
