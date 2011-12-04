@@ -24,7 +24,7 @@ function Readify() {
 	});*/
 	var t=0;
 	var t_elem;
-	$("*",elem).each(function () {
+	$("*").each(function () {
 	    $this = $(this);
 	    if ( $this.outerHeight() > t ) {
 	        t_elem=this;
