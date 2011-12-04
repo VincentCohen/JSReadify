@@ -23,12 +23,12 @@ function Readify() {
 		'line-height':'0.5em'
 	});*/
 	var highest	=0;
-	var t_elem;
+	var mainContainer;
 	$("body *").each(function () {
-	    $this = $(this);
-	    if ( $this.outerHeight() > highest ) {
-	        t_elem	=	this;
-	        highest		=	$this.outerHeight();
+	    $current = $(this);
+	    if ( $current.outerHeight() > highest ) {
+	        mainContainer	=	this;
+	        highest			=	$current.outerHeight();
 	    }
 	});
 	
