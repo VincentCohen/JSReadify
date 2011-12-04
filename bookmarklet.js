@@ -32,5 +32,5 @@ function Readify() {
 	    }
 	});
 	
-	jQuery(t_elem).css('border','1px solid red');
+	console.log(t_elem);
 }  
