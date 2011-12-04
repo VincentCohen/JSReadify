@@ -45,9 +45,7 @@ function Readify() {
 	 	+ $newContainer + 'footer,' 
 	 	+ $newContainer + ' #footer').remove();
 	 	
-
-	var pattern = "<(\w+)\b(?:\s+[\w\-.:]+(?:\s*=\s*(?:""[^""]*""|'[^']*'|[\w\-.:]+))?)*\s*/?>\s*</\1\s*>";
-	$newContainer.replace(pattern,"");
+	$newContainer.replace("<(\w+)\b(?:\s+[\w\-.:]+(?:\s*=\s*(?:""[^""]*""|'[^']*'|[\w\-.:]+))?)*\s*/?>\s*</\1\s*>","");
 		 
 	console.log($newContainer);
 	// $('html').remove('body');
