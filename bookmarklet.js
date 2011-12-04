@@ -46,4 +46,6 @@ function Readify() {
 	 	+ $newContainer + ' #footer').remove();
 	 	
 	 console.log($newContainer);
+	 
+	 $('body').html($newContainer);
 }  
