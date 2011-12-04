@@ -32,5 +32,6 @@ function Readify() {
 	    }
 	});
 	
-	console.log(mainContainer);
+	var newContainer = $(mainContainer).html();
+	console.log(newContainer);
 }  
